@@ -12,7 +12,7 @@
 		<setting name="useGeneratedKeys" value="true" /> 
         <setting name="defaultExecutorType" value="REUSE" />
 	</settings> -->
-    <typeAliases>
+    <!-- <typeAliases>
 		<typeAlias alias="user" type="com.test.entity.User"/>
-    </typeAliases>
+    </typeAliases> -->
 </configuration>

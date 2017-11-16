@@ -47,8 +47,11 @@ id="WebApp_ID" version="3.0">
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
-		<!-- 拦截所有/rest/*的请求,交给dispatcher处理,性能最好 -->
-		<url-pattern>/rest/*</url-pattern>
+		<!-- 拦截所有/rest/*的请求,交给dispatcher处理,性能最好。
+		如果配置此映射,类中的路径没有配置/rest,访问路径为/rest/user/index。
+		如果类中再次配置了/rest,访问路径为/rest/rest/user/index。-->
+		<!-- <url-pattern>/rest/*</url-pattern> -->
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
 	<!-- 首页 -->
@@ -59,15 +62,15 @@ id="WebApp_ID" version="3.0">
 	<!-- 错误页 -->
 	<error-page>
 		<error-code>404</error-code>
-		<location>/error/404.html</location>
+		<location>/error/404.jsp</location>
 	</error-page>
 	<error-page>
 		<error-code>500</error-code>
-		<location>/error/500.html</location>
+		<location>/error/500.jsp</location>
 	</error-page>
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
-		<location>/error/error.html</location>
+		<location>/error/error.jsp</location>
 	</error-page>
 </web-app>
 
