@@ -79,8 +79,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" 
     	p:dataSource-ref="dataSource"
     	p:configLocation="classpath:mybatis-config.xml"
-    	/>
-    <!-- p:mapperLocations="classpath:com/test/mybatis/*.xml" -->
+    	p:mapperLocations="classpath:com/test/mybatis/**/*.xml"/>
     
     <!-- 配置mybatis文件,扫描所有mapperxml文件 2-->
    <!--  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -92,7 +91,7 @@
     
     <!-- Spring与mybatis整合配置,扫描所有mapper接口 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" 
-    	p:basePackage="com.test.mapper"
+    	p:basePackage="com.test.mapper.**"
     	p:sqlSessionFactoryBeanName="sqlSessionFactory"/>
     
     <!-- Spring与mybatis整合配置,扫描所有mapper接口 2-->
@@ -140,4 +139,67 @@
     
     <!-- 配置使Spring采用CGLIB代理 -->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
+    
+    <!-- 自定义Realm -->
+    <bean id="ShiroRealm" class="com.test.common.base.admin.shiro.ShiroRealm" ></bean>
+
+    <!-- 安全管理器 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">  
+      	<property name="realm" ref="ShiroRealm"/>  
+    </bean>  
+
+	<!-- 开启Shiro注解 -->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor"/>  
+        <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">  
+      <property name="securityManager" ref="securityManager"/>  
+    </bean> 
+    
+     <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->  
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>  
+    
+    <!-- Shiro过滤器 -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		
+		<property name="loginUrl" value="/" />
+		
+		<property name="successUrl" value="/main/index" />
+		
+		<property name="unauthorizedUrl" value="/login_toLogin" />
+		
+		<property name="filterChainDefinitions">
+			<value>
+			/static/login/** 			= anon
+			/plugins/keypad/** 			= anon
+			/static/js/myjs/** 			= authc
+			/static/js/** 				= anon
+			/uploadFiles/uploadImgs/** 	= anon
+           	/code.do 					= anon
+           	/login_login	 			= anon
+           	/app**/** 					= anon
+           	/weixin/** 					= anon
+           	/**							= authc
+			</value>
+		</property>
+	</bean>
+    <!-- <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">  
+        Shiro的核心安全接口,这个属性是必须的  
+        <property name="securityManager" ref="securityManager"/>
+        身份认证失败，则跳转到登录页面的配置  
+        <property name="loginUrl" value="/login.jsp"/>
+        权限认证失败，则跳转到指定页面  
+        <property name="unauthorizedUrl" value="/unauthorized.jsp"/>  
+        Shiro连接约束配置,即过滤链的定义  
+        <property name="filterChainDefinitions">  
+            <value>  
+                /login=anon
+                /user/admin*=authc
+                /user/student*/**=roles[teacher]
+                /user/teacher*/**=perms["user:create"]
+            </value>  
+        </property>
+    </bean>   -->
+   
+
+    
 </beans>

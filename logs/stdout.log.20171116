@@ -1,0 +1,203 @@
+11-16 15:47:01:INFO(305)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+11-16 15:47:02:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 15:47:02 CST 2017]; root of context hierarchy
+11-16 15:47:02:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+11-16 15:47:02:WARN(167)localhost-startStop-1 org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.mapper]' package. Please check your configuration.
+11-16 15:47:02:INFO(172)localhost-startStop-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+11-16 15:47:02:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:47:03:INFO(638)localhost-startStop-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11-16 15:47:04:INFO(345)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2405 ms
+11-16 15:47:04:INFO(489)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+11-16 15:47:04:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:47:04 CST 2017]; parent: Root WebApplicationContext
+11-16 15:47:04:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+11-16 15:47:04:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:47:04:INFO(543)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/rest/user/index]}" onto public java.lang.String com.test.controller.UserController.index()
+11-16 15:47:05:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:47:04 CST 2017]; parent: Root WebApplicationContext
+11-16 15:47:05:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:47:04 CST 2017]; parent: Root WebApplicationContext
+11-16 15:47:05:INFO(508)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 1379 ms
+11-16 15:50:22:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:50:22:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:01:INFO(305)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+11-16 15:53:01:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 15:53:01 CST 2017]; root of context hierarchy
+11-16 15:53:01:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+11-16 15:53:02:WARN(167)localhost-startStop-1 org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.mapper]' package. Please check your configuration.
+11-16 15:53:02:INFO(172)localhost-startStop-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+11-16 15:53:02:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:53:03:INFO(638)localhost-startStop-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11-16 15:53:03:INFO(345)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2420 ms
+11-16 15:53:03:INFO(489)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+11-16 15:53:03:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:53:03 CST 2017]; parent: Root WebApplicationContext
+11-16 15:53:03:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+11-16 15:53:04:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:53:04:INFO(543)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.test.controller.UserController.index()
+11-16 15:53:04:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:53:03 CST 2017]; parent: Root WebApplicationContext
+11-16 15:53:04:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:53:03 CST 2017]; parent: Root WebApplicationContext
+11-16 15:53:04:INFO(508)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 1087 ms
+11-16 15:53:14:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:14:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-3 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-3 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-4 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-4 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-6 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/rest/user/index] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:17:WARN(1147)http-bio-9999-exec-6 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:20:WARN(1147)http-bio-9999-exec-7 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:20:WARN(1147)http-bio-9999-exec-7 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:21:WARN(1147)http-bio-9999-exec-8 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:21:WARN(1147)http-bio-9999-exec-8 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-9 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-9 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:22:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:23:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:24:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:25:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 15:53:26:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 15:55:19:INFO(305)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+11-16 15:55:19:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 15:55:19 CST 2017]; root of context hierarchy
+11-16 15:55:19:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+11-16 15:55:20:WARN(167)localhost-startStop-1 org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.mapper]' package. Please check your configuration.
+11-16 15:55:20:INFO(172)localhost-startStop-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+11-16 15:55:20:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:55:21:INFO(638)localhost-startStop-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11-16 15:55:21:INFO(345)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2300 ms
+11-16 15:55:21:INFO(489)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+11-16 15:55:21:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:55:21 CST 2017]; parent: Root WebApplicationContext
+11-16 15:55:21:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+11-16 15:55:21:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 15:55:22:INFO(543)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.test.controller.UserController.index()
+11-16 15:55:22:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:55:21 CST 2017]; parent: Root WebApplicationContext
+11-16 15:55:22:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 15:55:21 CST 2017]; parent: Root WebApplicationContext
+11-16 15:55:22:INFO(508)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 1064 ms
+11-16 15:55:43:INFO(16)http-bio-9999-exec-2 com.test.controller.UserController - user index
+11-16 15:55:43:INFO(17)http-bio-9999-exec-2 com.test.controller.UserController - user index
+11-16 15:55:43:INFO(18)http-bio-9999-exec-2 com.test.controller.UserController - user index
+11-16 16:00:57:INFO(305)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+11-16 16:00:57:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 16:00:57 CST 2017]; root of context hierarchy
+11-16 16:00:57:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+11-16 16:01:01:WARN(167)localhost-startStop-1 org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.mapper]' package. Please check your configuration.
+11-16 16:01:01:INFO(172)localhost-startStop-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+11-16 16:01:01:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 16:01:03:INFO(638)localhost-startStop-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11-16 16:01:03:INFO(345)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6562 ms
+11-16 16:01:04:INFO(489)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+11-16 16:01:04:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:01:04 CST 2017]; parent: Root WebApplicationContext
+11-16 16:01:04:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+11-16 16:01:04:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 16:01:04:INFO(543)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.test.controller.UserController.index()
+11-16 16:01:05:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:01:04 CST 2017]; parent: Root WebApplicationContext
+11-16 16:01:05:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:01:04 CST 2017]; parent: Root WebApplicationContext
+11-16 16:01:05:INFO(508)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 1518 ms
+11-16 16:01:27:INFO(16)http-bio-9999-exec-1 com.test.controller.UserController - user index
+11-16 16:01:27:INFO(17)http-bio-9999-exec-1 com.test.controller.UserController - user index
+11-16 16:01:27:INFO(18)http-bio-9999-exec-1 com.test.controller.UserController - user index
+11-16 16:01:27:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/WEB-INF/views/index.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:01:27:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:01:35:WARN(1147)http-bio-9999-exec-3 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
+11-16 16:01:35:WARN(1147)http-bio-9999-exec-3 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:07:WARN(1147)http-bio-9999-exec-6 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:07:WARN(1147)http-bio-9999-exec-6 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-9 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-9 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:12:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:13:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:14:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:14:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:15:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:15:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:15:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/xxx] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:15:WARN(1147)http-bio-9999-exec-10 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:22:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:22:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:24:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:24:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-5 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:25:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:02:26:WARN(1147)http-bio-9999-exec-1 org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/error/404.jsp] in DispatcherServlet with name 'dispatcher'
+11-16 16:12:21:INFO(305)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+11-16 16:12:21:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Nov 16 16:12:21 CST 2017]; root of context hierarchy
+11-16 16:12:21:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+11-16 16:12:22:WARN(167)localhost-startStop-1 org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.test.mapper]' package. Please check your configuration.
+11-16 16:12:22:INFO(172)localhost-startStop-1 org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+11-16 16:12:22:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 16:12:23:INFO(638)localhost-startStop-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+11-16 16:12:23:INFO(345)localhost-startStop-1 org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2382 ms
+11-16 16:12:23:INFO(489)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization started
+11-16 16:12:23:INFO(581)localhost-startStop-1 org.springframework.web.context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:12:23 CST 2017]; parent: Root WebApplicationContext
+11-16 16:12:23:INFO(317)localhost-startStop-1 org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+11-16 16:12:24:INFO(155)localhost-startStop-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+11-16 16:12:24:INFO(543)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.test.controller.UserController.index()
+11-16 16:12:24:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:12:23 CST 2017]; parent: Root WebApplicationContext
+11-16 16:12:25:INFO(534)localhost-startStop-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Nov 16 16:12:23 CST 2017]; parent: Root WebApplicationContext
+11-16 16:12:25:INFO(508)localhost-startStop-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcher': initialization completed in 1410 ms
+11-16 16:12:47:INFO(16)http-bio-9999-exec-2 com.test.controller.UserController - user index
+11-16 16:12:47:INFO(17)http-bio-9999-exec-2 com.test.controller.UserController - user index
+11-16 16:12:47:INFO(18)http-bio-9999-exec-2 com.test.controller.UserController - user index

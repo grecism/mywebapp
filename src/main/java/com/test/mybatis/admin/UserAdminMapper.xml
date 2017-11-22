@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.admin.UserAdminMapper" >
+  <resultMap id="BaseResultMap" type="com.test.entity.admin.UserAdmin" >
+    <!--          -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="seal_flag" property="sealFlag" jdbcType="INTEGER" />
+    <result column="current_review_count" property="currentReviewCount" jdbcType="INTEGER" />
+    <result column="last_login_ip" property="lastLoginIp" jdbcType="VARCHAR" />
+    <result column="last_login_time" property="lastLoginTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--          -->
+    id, username, password, mobile, email, seal_flag, current_review_count, last_login_ip, 
+    last_login_time, create_time, update_time
+  </sql>
+  <select id="login" resultMap="BaseResultMap" >
+  	 select 
+    <include refid="Base_Column_List" />
+    from hello_user_admin
+    where username = #{username,jdbcType=VARCHAR} and  password = #{password,jdbcType=VARCHAR} 
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    <!--          -->
+    select 
+    <include refid="Base_Column_List" />
+    from hello_user_admin
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    <!--          -->
+    delete from hello_user_admin
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.test.entity.admin.UserAdmin" >
+    <!--          -->
+    insert into hello_user_admin (id, username, password, 
+      mobile, email, seal_flag, 
+      current_review_count, last_login_ip, last_login_time, 
+      create_time, update_time)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{sealFlag,jdbcType=INTEGER}, 
+      #{currentReviewCount,jdbcType=INTEGER}, #{lastLoginIp,jdbcType=VARCHAR}, #{lastLoginTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.test.entity.admin.UserAdmin" >
+    <!--          -->
+    insert into hello_user_admin
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="mobile != null" >
+        mobile,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="sealFlag != null" >
+        seal_flag,
+      </if>
+      <if test="currentReviewCount != null" >
+        current_review_count,
+      </if>
+      <if test="lastLoginIp != null" >
+        last_login_ip,
+      </if>
+      <if test="lastLoginTime != null" >
+        last_login_time,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sealFlag != null" >
+        #{sealFlag,jdbcType=INTEGER},
+      </if>
+      <if test="currentReviewCount != null" >
+        #{currentReviewCount,jdbcType=INTEGER},
+      </if>
+      <if test="lastLoginIp != null" >
+        #{lastLoginIp,jdbcType=VARCHAR},
+      </if>
+      <if test="lastLoginTime != null" >
+        #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.test.entity.admin.UserAdmin" >
+    <!--          -->
+    update hello_user_admin
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sealFlag != null" >
+        seal_flag = #{sealFlag,jdbcType=INTEGER},
+      </if>
+      <if test="currentReviewCount != null" >
+        current_review_count = #{currentReviewCount,jdbcType=INTEGER},
+      </if>
+      <if test="lastLoginIp != null" >
+        last_login_ip = #{lastLoginIp,jdbcType=VARCHAR},
+      </if>
+      <if test="lastLoginTime != null" >
+        last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.test.entity.admin.UserAdmin" >
+    <!--          -->
+    update hello_user_admin
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      seal_flag = #{sealFlag,jdbcType=INTEGER},
+      current_review_count = #{currentReviewCount,jdbcType=INTEGER},
+      last_login_ip = #{lastLoginIp,jdbcType=VARCHAR},
+      last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByUserAdmin" resultMap="BaseResultMap" parameterType="com.test.entity.admin.UserAdmin" >
+    <!-- 根据登录用户名密码查询当前登录用户        -->
+    select 
+    <include refid="Base_Column_List" />
+    from hello_user_admin
+    where 1=1
+     <if test="username != null" >
+         and username = #{username,jdbcType=VARCHAR}
+      </if>
+      <if test="password != null" >
+         and password = #{password,jdbcType=VARCHAR}
+      </if>
+      <if test="mobile != null" >
+         and mobile = #{mobile,jdbcType=VARCHAR}
+      </if>
+      <if test="email != null" >
+         and email = #{email,jdbcType=VARCHAR}
+      </if>
+      <if test="sealFlag != null" >
+         and seal_flag = #{sealFlag,jdbcType=INTEGER}
+      </if>
+      <if test="currentReviewCount != null" >
+         and current_review_count = #{currentReviewCount,jdbcType=INTEGER}
+      </if>
+      <if test="lastLoginIp != null" >
+         and last_login_ip = #{lastLoginIp,jdbcType=VARCHAR}
+      </if>
+      <if test="lastLoginTime != null" >
+         and last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="createTime != null" >
+         and create_time = #{createTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="updateTime != null" >
+         and update_time = #{updateTime,jdbcType=TIMESTAMP}
+      </if>
+  </select>
+</mapper>
