@@ -39,5 +39,11 @@ public class Test {
 		PageData userInfo = userMapper.getUserInfo(pd);
 		logger.info(JSON.toJSONString(userInfo));
 	}
+	
+	@org.junit.Test
+	public void testb() throws Throwable{
+		logger.info("aaaaaaaaaaaa");
+		
+	}
 
 }
