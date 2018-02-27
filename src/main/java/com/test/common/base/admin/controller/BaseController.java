@@ -16,6 +16,7 @@ import util.admin.UuidUtil;
  * @author	: admin
  * @date	: 2017年11月21日下午7:06:55
  */
+
 public class BaseController {
 	protected Logger logger = Logger.getLogger(this.getClass());
 	private static final long serialVersionUID = 6357869213649815390L;
